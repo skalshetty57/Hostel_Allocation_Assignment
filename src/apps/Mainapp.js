@@ -4,14 +4,14 @@ import Home from '../Pages/home';
 
 
 function MainApp(props){
-  let name=props.userName;
+  let namae=props.userName;
+  console.log(namae);
   return(
     <>
     
     <Router>
       <Switch>
-        <Route path='/' render={() => <Home userName={name}  />} exact />
-        
+        <Route path='/' render={() => <Home userName={namae}  />} exact />
       </Switch>
       
     </Router>
